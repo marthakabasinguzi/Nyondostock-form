@@ -1,0 +1,19 @@
+/* Container Styling */
+.registration-card {max-width: 800px; margin: 50px auto; padding: 30px; background: #ffffff; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0,.1) ;
+    font-family: Inter', sans-serif;}
+
+/* Initializing the Grid */
+.grid-form {display: grid; grid-template-columns: 1fr 1fr; /* Two equal columns */ gap: 20px; /* Spacing between grid items */}
+
+/* Layout Rules */
+.form-group {display: flex; flex-direction: column;}
+
+.full-width {grid-column: span 2; /* Makes address span across both columns */}
+
+.submit-btn {grid-column: span 2; /* Makes button span across both columns */ padding: 15px; background-color: #2563eb; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; margin-top: 10px;}
+
+/* Mobile Responsiveness */ @media (max-width: 600px) { .grid-form { grid-template-columns: 1fr; /* Stacks to 1 column on small screens */}
+.full-width, .submit-btn { grid-column: span 1;}}
+
+/* Basic Visual Polish */ label { margin-bottom: 8px; font-size: 0.85rem; color: #4b5563; }
+input, select, textarea { padding: 12px; border: 1px; solid #d1d5db; border-radius: 6px; font-size: 1rem;}
